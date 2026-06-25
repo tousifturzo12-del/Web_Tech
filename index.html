@@ -6,75 +6,129 @@
     <title>Document</title>
 </head>
 <body>
-    <h2> HTML</h2>
-
-            <p>
-                HTML stands for <b>HyperText Markup Language</b>.
-                It is used to create <i>web pages</i>.
-                This text is <u>underlined</u>.
-            </p>
-            <p> <b>Click on html logo to know more about html</b></p>
-            <a href="/description.html"><img src="/html_logo.png" alt="Logo" width="100"></a>
-            <p>
-                Water formula: H<sub>2</sub>O <br>
-                Mathematical expression: x<sup>2</sup> + y<sup>2</sup>
-            </p>
-
-            <p> <b>Click Visit html to learn Html</b> </p>
-
-            <a href="https://www.w3schools.com/html/" > <b>Visit html</b> </a>
+    <h2>Library Membership Registration Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>personal Information</legend>
+            <label for="fname">Full name</label>
+            <input type="text" name="fname" id="fname" required>
             <br/>
-            
-            <video width="640" height="360" controls><source src="HTML in 100 Seconds.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <label for="mid">Membership Id:</label>
+            <input type="text" name="mid" id="mid" required>
+            <br/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Phone:</label>
+             <input type="text" name="phone" id="phone" required>
+             <br/>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+            <br/>
+            Gender:
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male </label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other">
+            <label for="other">Other</label>
 
 
-        </section>
 
-        <hr>
+        </fieldset>
+        <br/>
+        <fieldset>
+
+            <legend>Membership Information</legend>
+            <label for="membershiptype">Membership Type</label>
+
+            <select name="membershiptype" id="membershiptype">
+                <option value="">Select membership Type</option>
+                <option value="Student">Student</option>
+                <option value="faculty">Faculty</option>
+                 <option value="researcher">Researcher</option>
+                 <option value="generalmember">General Member</option>
+
+
+            </select>
+            <br/>
+
+            <label for="preferedLibarysection">Prefered Library Section</label>
+
+            <select name="preferedLibrarysection" id="preferedLibarysection">
+                <option value="">Select Prefered Library Section</option>
+                <option value="Science & Technology">Science & technology</option>
+                <option value="literature">Literature</option>
+                 <option value="business studies">Business studies</option>
+                 <option value="history">History</option>
+                 <option value="arts&culture">Arts & Culture</option>
+
+            </select>
         
-        <section>
-            <h2>Image Example</h2>
 
-            <img src="/ht.png" width="300" height="200" alt="This is a image">
-        </section>
 
-        <hr>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Reading Preferences</legend>
+        Select Favourite Book categories:
+            <input type="checkbox" name="catagory" id="fiction" value="fiction">
+            <label for="fiction">Fiction </label>
+            <input type="checkbox" name="catagory" id="Non-Fiction" value="Non-Fiction">
+            <label for="Non-Fiction">Non-Fiction </label>
+            <input type="checkbox" name="catagory" id="science" value="Science">
+            <label for="science">Science </label>
+            <input type="checkbox" name="catagory" id="technology" value="technology">
+            <label for="technology">Technology </label>
+            <input type="checkbox" name="catagory" id="biography" value="biography">
+            <label for="biography">Biography </label>
+            <input type="checkbox" name="catagory" id="histoy" value="history">
+            <label for="history">History </label>
+        
 
-        <section>
-            <h2>Div and Span Example</h2>
-
-            <div>
-                This is a DIV container.
-                <span>
-                    This text is inside a SPAN element.
-                </span>
-            </div>
-        </section>
-
-        <hr>
-
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Library services </legend>
+            Select Services You want:
+            <input type="checkbox" name="services" id="bookborrowing" value="bookborrowing">
+            <label for="bookborrowing">Book Borrowing</label>
+            <input type="checkbox" name="services" id="access" value="access">
+            <label for="access">Digital Library access</label>
+            <input type="checkbox" name="services" id="readingroom" value="readingroom">
+            <label for="readingroom">Reading Room</label>
+            <input type="checkbox" name="services" id="researchassistance" value="researchassistance">
+            <label for="researchassistance">Reasearch Assistance</label>
+            
     
-        <section>
-            <h2>Lists Example</h2>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Additional Information</legend>
+           Current Address:
+           <br/>
+            <textarea id="addrress" name="addrress" row="4" cols="40"></textarea>
+            <br/>
+            <label for="phone">Emergency Contact Number:</label>
+            <input type="text" name="phone" id="phone" required>
+            <br/>
+            Reason for Joining Library:
+           <br/>
+            <textarea id="reason" name="reason" row="4" cols="40"></textarea>
+            <br/>
+            Suggestion For  Library Improvement:
+           <br/>
+            <textarea id="suggestion" name="suggestion" row="4" cols="40"></textarea>
+            <br/>
 
-            <h3>Unordered List (UL)</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
 
-            <h3>Ordered List (OL)</h3>
-            <ol>
-                <li>Wake Up</li>
-                <li>Study</li>
-                <li>Sleep</li>
-            </ol>
-        </section>
+        </fieldset>
+        <br/>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
 
-    </main>
-
-</body>
-</html>
+        
+    </form>
+    
+    
 </body>
 </html>
